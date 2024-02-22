@@ -16,7 +16,7 @@ class First:
 ✣ **Group Support :** [Support Group](t.me/CARI_TEMAN_VIRTUALX)
 ✣ **Channel :** [Channel](t.me/ctvaselole)
 ✣ **Owner Repo :** [zergio](t.me/ZERGIIORVDRA)
-✣ **Repo :** [zergiouserbot](https://github.com/zerepctv/userbot)
+✣ **Repo :** [zerepuserbot](https://github.com/zerepctv/userbot)
 
 Powered by [PyroMan-Userbot](https://github.com/mrismanaziz/pyroman-userbot)"""
     CREATOR = 'I was created by my master <a href="https://github.com/zerepctv/userbot">Man</a> on a rainy day.'

@@ -33,7 +33,7 @@ CMD_HNDLR = cmd
 OWNER_ID = getenv("OWNER_ID", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 OPENAI_API = getenv("OPENAI_API", "")
-CHANNEL = getenv("CHANNEL", "yagitudahpokonya")
+CHANNEL = getenv("CHANNEL", "ctvaselole")
 CMD_HANDLER = getenv("CMD_HANDLER", ".")
 DB_URL = getenv("DATABASE_URL", "")
 GIT_TOKEN = getenv(
@@ -42,7 +42,7 @@ GIT_TOKEN = getenv(
         "utf-8"
     ),
 )
-GROUP = getenv("GROUP", "CARI_TEMAN_VIRTUAL_IND")
+GROUP = getenv("GROUP", "CARI_TEMAN_VIRTUALX")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)

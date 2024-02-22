@@ -29,12 +29,12 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 ## 🏷 Support
 
 - Follow Channel .[My Life](https://t.me/yagitudahpokonya) untuk info Update bot 
-- Gabung Group [CARI TEMAN VIRTUAL](https://t.me/CARI_TEMAN_VIRTUALX) untuk diskusi, pelaporan bug, dan bantuan tentang ZerPyro-Userbot.
+- Gabung Group [CARI TEMAN VIRTUAL](https://t.me/CARI_TEMAN_VIRTUALX) untuk diskusi, pelaporan bug, dan bantuan tentang zerep-userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 -  [Risman](https://github.com/mrismanaziz) for [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)
--  [Zergio](https://github.com/zerepctv) for [Zerep-Userbot](https://github.com/zerepctv/userbot)
+-  [zerep](https://github.com/zerepctv) for [Zerep-Userbot](https://github.com/zerepctv/userbot)
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/PyroMan-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot

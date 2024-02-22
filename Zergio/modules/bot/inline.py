@@ -66,7 +66,7 @@ async def alive_function(message: Message, answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph//file/e2f4a9478acc26c7c533f.jpg",
+            thumb_url="https://telegra.ph//file/056dde49b15dd4f88eeac.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
@@ -84,8 +84,8 @@ async def ping_function(message: Message, answers):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     msg = (
-        f"<b>💢𝐙𝐞𝐫𝐠𝐢𝐨-𝐔𝐬𝐞𝐫𝐛𝐨𝐭💢</b>\n\n"
-        f"<b>🇮🇩ᴋᴏɴᴛᴏʟ!!<b>\n"
+        f"<b>🐷zerep-userbot🐷</b>\n\n"
+        f"<b>🇮🇩idup kok kak<b>\n"
         f"├•ᴜᴘᴛɪᴍᴇ :</b> <code>{uptime}</code>\n"
         f"├•ᴅᴜʀᴀᴛɪᴏɴ :</b> <code>{duration}ms</code>\n"
     )
@@ -93,12 +93,12 @@ async def ping_function(message: Message, answers):
         InlineQueryResultArticle(
             title="ping",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph//file/e2f4a9478acc26c7c533f.jpg",
+            thumb_url="https://telegra.ph//file/056dde49b15dd4f88eeac.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Support", url="t.me/cari_teman_virtual_ind")]]
+                [[InlineKeyboardButton("Support", url="t.me/cari_teman_virtualx")]]
             ),
         )
     )
@@ -107,22 +107,22 @@ async def ping_function(message: Message, answers):
 
 async def karman_function(message: Message, answers):
     msg = (
-        f"𝐙𝐞𝐫𝐠𝐢𝐨-𝐔𝐬𝐞𝐫𝐛𝐨𝐭 \n"
-        "ㅤㅤStatus : blum nikah\n"
+        f"zerep-userbot \n"
+        "ㅤㅤStatus : jomblo kak\n"
         f"ㅤㅤㅤㅤmodules:</b> <code>{len(modules)} Modules</code> \n"
         f"ㅤㅤㅤㅤbot version: {BOT_VER} \n"
         f"ㅤㅤㅤㅤbranch: {branch} \n\n"
     )
     answers.append(
         InlineQueryResultArticle(
-            title="zer",
+            title="zerep",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph//file/e2f4a9478acc26c7c533f.jpg",
+            thumb_url="https://telegra.ph//file/056dde49b15dd4f88eeac.jpg",
             input_message_content=InputTextMessageContent(
                 msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True
             ),
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="💢sᴜᴘᴘᴏʀᴛ💢", url="t.me/cari_teman_virtual_ind"), InlineKeyboardButton(text="💢ᴏᴡɴᴇʀ💢", url="t.me/ZERGIIORVDRA")], [InlineKeyboardButton(text="💢ᴍᴇɴᴜ💢", callback_data="reopen")]]
+                [[InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url="t.me/cari_teman_virtualx"), InlineKeyboardButton(text="•ᴏᴡɴᴇʀ•", url="t.me/ZERGIIORVDRA")], [InlineKeyboardButton(text="•ᴍᴇɴᴜ•", callback_data="reopen")]]
             ),
         )
     )
@@ -135,7 +135,7 @@ async def help_function(answers):
         InlineQueryResultArticle(
             title="Help Article!",
             description="Check Command List & Help",
-            thumb_url="https://telegra.ph//file/e2f4a9478acc26c7c533f.jpg",
+            thumb_url="https://telegra.ph//file/056dde49b15dd4f88eeac.jpg",
             input_message_content=InputTextMessageContent(
                 Data.text_help_menu.format(len(CMD_HELP))
             ),

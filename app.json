@@ -1,6 +1,6 @@
 {
-  "name": "Zerep-Userbot",
-  "description": "[Zerep-Userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.  Powered by ZerPyro-Userbot.",
+  "name": "zerep-userbot",
+  "description": "[zerep-userbot] adalah userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.  Powered by ctvaselole.",
   "stack": "heroku-22",
   "logo": "https://telegra.ph//file/91f31b2c026e5f08b7a99.jpg",
   "env": {

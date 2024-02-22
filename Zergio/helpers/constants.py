@@ -10,18 +10,18 @@
 class First:
     ALIVE = "`Still Working On Fire 👑`"
     REPO = """
-**Hey**, __I am using__ ⚜️ **ZergioUserbot** ⚜️
+**Hey**, __I am using__ 🐷 **zerep** 🐷
 
 ✣ **Userbot Version :** `{}`
-✣ **Group Support :** [Support Group](t.me/CARI_TEMAN_VIRTUAL_IND)
-✣ **Channel :** [Channel](t.me/yagitudahpokonya)
+✣ **Group Support :** [Support Group](t.me/CARI_TEMAN_VIRTUALX)
+✣ **Channel :** [Channel](t.me/ctvaselole)
 ✣ **Owner Repo :** [zergio](t.me/ZERGIIORVDRA)
-✣ **Repo :** [zergiouserbot](https://github.com/zergiiorvdra/zeruserbot)
+✣ **Repo :** [zergiouserbot](https://github.com/zerepctv/userbot)
 
 Powered by [PyroMan-Userbot](https://github.com/mrismanaziz/pyroman-userbot)"""
-    CREATOR = 'I was created by my master <a href="https://github.com/ArmanGG01/PyroKar-Userbot">Man</a> on a rainy day.'
+    CREATOR = 'I was created by my master <a href="https://github.com/zerepctv/userbot">Man</a> on a rainy day.'
     MSG_ON = """
-🔥 **Zergio-Userbot Berhasil Di Aktifkan**
+🐷 **zerep-userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}`
 ➠ **Ketik** `{}man` **untuk Mengecheck Bot**

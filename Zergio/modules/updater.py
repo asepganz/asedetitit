@@ -175,7 +175,7 @@ async def upstream(client: Client, message: Message):
             repo.__del__()
             return
         await status.edit(
-            "`[HEROKU]: Update Deploy Zergio-Userbot Sedang Dalam Proses...`"
+            "`[HEROKU]: Update Deploy zerep-userbot Sedang Dalam Proses...`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -192,7 +192,7 @@ async def upstream(client: Client, message: Message):
         except GitCommandError:
             pass
         await status.edit(
-            "`Zergio-Userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
+            "`zerep-userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
         )
     else:
         try:
@@ -201,7 +201,7 @@ async def upstream(client: Client, message: Message):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await status.edit(
-            "`Zergio-Userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
+            "`zerep-userbot Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`",
         )
         args = [sys.executable, "-m", "Zergio"]
         execle(sys.executable, *args, environ)

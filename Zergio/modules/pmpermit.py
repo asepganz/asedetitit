@@ -23,13 +23,12 @@ from .help import add_command_help
 
 DEF_UNAPPROVED_MSG = (
     "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "       👑𝗝𝗔𝗡𝗚𝗔𝗡 𝗦𝗣𝗔𝗠 𝗬𝗔 𝗗𝗘𝗞 👑\n"
+    "       👑𝗕𝗘 𝗣𝗔𝗧𝗜𝗘𝗡𝗧👑\n"
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
-    "• Saya belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai saya menyetujui PM anda.\n"
-    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    "• e buset sabar bes, nanti di buka chat nya.\n"
+    "• nanti ke blokir automatis kalo nyepam bes.\n"
     "┏▼━━━━━━━━━━━━━━━━━━━▼┓\n"
-    "    𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 - 𝗭𝗲𝗿𝗴𝗶𝗼\n"
+    "   𝗣𝗲𝘀𝗮𝗻 𝗢𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗕𝘆 - @CTVASELOLE\n"
     "┗▲━━━━━━━━━━━━━━━━━━━▲┛\n"
 )
 

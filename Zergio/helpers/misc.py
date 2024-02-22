@@ -128,9 +128,9 @@ async def create_botlog(client):
     LOGGER("Zergio").info(
         "TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA"
     )
-    desc = "Group Log untuk Zergio-UserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n💢 Powered By ~ @CARI_TEMAN_VIRTUAL_IND 💢"
+    desc = "Group Log untuk zerep-userbot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n💢 Powered By ~ @CARI_TEMAN_VIRTUALX 💢"
     try:
-        gruplog = await client.create_supergroup("Zergio UserBot Log", desc)
+        gruplog = await client.create_supergroup("zerep-userbot Log", desc)
         if await in_heroku():
             heroku_var = HAPP.config()
             heroku_var["BOTLOG_CHATID"] = gruplog.id

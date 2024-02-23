@@ -1390,7 +1390,7 @@ async def ular(client: Client, message: Message):
         "░░░░░░░░░░░░░░░░░░░\n",
     )
 
-    @Client.on_message(filters.command("tengkorak", cmd) & filters.me)
+@Client.on_message(filters.command("tengkorak", cmd) & filters.me)
 async def tengkorak(client: Client, message: Message):
     await message.edit("███████████████████████████\n"
                      "███████▀▀▀░░░░░░░▀▀▀███████\n"
@@ -1411,7 +1411,7 @@ async def tengkorak(client: Client, message: Message):
                      "███████▄░░░░░░░░░░░▄███████\n"
                      "██████████▄▄▄▄▄▄▄██████████\n"
                      "███████████████████████████\n")
-                     
+
 @Client.on_message(filters.command("cinta", cmd) & filters.me)
 async def cinta(client: Client, message: Message):
     if message.fwd_from:
@@ -1464,9 +1464,9 @@ add_command_help(
         ["wink", "To Get A Winking Gifs."],
         ["love", "To Propose Someone."],
         ["loveyou", "It Will Send Random Emojis."],
-        ["ular", "It Will Art of Snake."],
-        ["tengkorak", "It Will Art of Skull."],
-        ["cinta", "Love Animation."],
+        ["cinta", "It Will Send Love Animation."],
+        ["tengkorak", "It Will Send Skull Art."],
+        ["ular", "It Will Send Snake"],
         [
             "pat",
             "To get a pat gifs",

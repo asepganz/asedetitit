@@ -270,7 +270,7 @@ async def updaterman(client: Client, message: Message):
 add_command_help(
     "update",
     [
-        ["update", "Untuk melihat list pembaruan terbaru dari Zergio-Userbot."],
+        ["update", "Untuk melihat list pembaruan terbaru dari Zerep-Userbot."],
         ["update deploy", "Untuk mengupdate userbot."],
     ],
 )

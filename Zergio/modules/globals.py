@@ -322,7 +322,7 @@ async def gkick_user(client: Client, message: Message):
     try:
         if sql3.is_gkicked(user.id):
             return await Man.edit("`User already gkick`")
-        sql3.gmute(user.id)
+        sql3.gkick(user.id)
         await Man.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gkick!")
         try:
             common_chats = await client.get_common_chats(user.id)

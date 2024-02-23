@@ -313,26 +313,37 @@ async def gkick_user(client: Client, message: Message):
         return await Man.edit(
             "**Kau Gak Bisa bes gkick Dia Karena Dia Adalah admin @ZERGIIORVDRA 😡**"
         )
-    try:
-        replied_user = reply.from_user
-        if replied_user.is_self:
-            return await Man.edit("`Calm down anybob, you can't gkick yourself.`")
-    except BaseException:
-        pass
-    try:
-        if sql3.is_gkicked(user.id):
-            return await Man.edit("`User already gkick`")
-        sql3.gkick(user.id)
-        await Man.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gkick!")
+    if user_id:
         try:
-            common_chats = await client.get_common_chats(user.id)
-            for i in common_chats:
-                await i.restrict_member(user.id, ChatPermissions())
+            user = await client.get_users(user_id)
+        except Exception:
+            return await Man.edit("`Harap tentukan pengguna yang valid!`")
+
+    if sql.is_gkicked(user.id):
+        return await Man.edit(
+            f"[Jamet](tg://user?id={user.id}) **ini sudah ada di daftar gkicked**"
+        )
+    f_chats = await get_ub_chats(client)
+    if not f_chats:
+        return await Man.edit("**Yahhh cok Dirimu ga punya GC yang dirimu admin 🥺**")
+    er = 0
+    done = 0
+    for gokid in f_chats:
+        try:
+            await client.kick_chat_member(chat_id=gokid, user_id=int(user.id))
+            done += 1
         except BaseException:
-            pass
-    except Exception as e:
-        await Man.edit(f"**ERROR:** `{e}`")
-        return
+            er += 1
+    sql.gban(user.id)
+    msg = (
+        r"**\\#GKicked_User//**"
+        f"\n\n**First Name:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n**User ID:** `{user.id}`"
+    )
+    if reason:
+        msg += f"\n**Reason:** `{reason}`"
+    msg += f"\n**Affected To:** `{done}` **Chats**"
+    await Man.edit(msg)
 
     
 add_command_help(

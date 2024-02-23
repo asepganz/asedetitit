@@ -288,10 +288,10 @@ async def globals_check(client: Client, message: Message):
 
 # ON PROGRES G KICK!!!!! JAN LUPA DI LANJUT 
 
-@Client.on_message(
-    filters.command("cgkick", ["."]) & filters.user(DEVS) & ~filters.via_bot
-)
-@Client.on_message(filters.command("gkick", cmd) & filters.me)
+# @Client.on_message(
+#     filters.command("cgkick", ["."]) & filters.user(DEVS) & ~filters.via_bot
+# )
+# @Client.on_message(filters.command("gkick", cmd) & filters.me)
 async def gkick_user(client: Client, message: Message):
     user_id, reason = await extract_user_and_reason(message, sender_chat=True)
     if message.from_user.id != client.me.id:

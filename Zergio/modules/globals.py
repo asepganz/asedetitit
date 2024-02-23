@@ -22,7 +22,7 @@ from .help import add_command_help
 
 def globals_init():
     try:
-        global sql, sql2
+        global sql, sql2, sql3
         from importlib import import_module
 
         sql = import_module("Zergio.helpers.SQL.gban_sql")

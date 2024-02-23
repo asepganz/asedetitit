@@ -1416,10 +1416,10 @@ async def tengkorak(client: Client, message: Message):
 async def cinta(client: Client, message: Message):
     if message.forward_from:
         return
-    input_str = message.pattern_match.group(1)
-    if input_str == "cinta":
-        await message.edit(input_str)
-        animation_chars = [
+    animation_interval = 1
+    animation_ttl = range(0, 14)
+    await message.edit("cinta")
+    animation_chars = [
             "`Connecting Ke Server Cinta`",
             "`Mencari Target Cinta`",
             "`Mengirim Cintaku.. 0%\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `",
@@ -1432,11 +1432,10 @@ async def cinta(client: Client, message: Message):
             "`Mengirim Cintaku.. 100%\n█████████CINTAKU███████████ `",
             "`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞`",
         ]
-        animation_interval = 2
-        animation_ttl = range(11)
-        for i in animation_ttl:
-            await asyncio.sleep(animation_interval)
-            await message.edit(animation_chars[i % 11])
+    for i in animation_ttl:
+
+        await asyncio.sleep(animation_interval)
+        await message.edit(animation_chars[i % 14])
 
 add_command_help(
     "animation",

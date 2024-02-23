@@ -288,7 +288,7 @@ async def globals_check(client: Client, message: Message):
 
 # ON PROGRES G KICK!!!!! JAN LUPA DI LANJUT 
 
-@Client.on_message(filters.command("gmute", cmd) & filters.me)
+@Client.on_message(filters.command("gkick", cmd) & filters.me)
 async def gkick_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message

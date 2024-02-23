@@ -11,7 +11,7 @@ from Zergio.helpers.misc import heroku
 BOT_VER = "0.1.0"
 CMD_HANDLER = ["." "," "?" "!"]
 MSG_ON = """
-🐷 **CTVASELOLE udah hidup gaes** 🐷
+🐷 **userbotmu udah hidup gaes** 🐷
 ╼┅━━━━━━━━━━╍━━━━━━━━━━┅╾
 ❍▹ **Userbot Version -** `{}`
 ❍▹ **Ketik** `{}alive` **untuk Mengecek Bot**
@@ -43,7 +43,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    LOGGER("zergio").info("🥳 CTVASELOLE sudah Hidup yeay 🥳")
+    LOGGER("zergio").info("🥳 ZEREP sudah Hidup yeay 🥳")
     install()
     heroku()
     LOOP.run_until_complete(main())

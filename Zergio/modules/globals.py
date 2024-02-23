@@ -27,10 +27,12 @@ def globals_init():
 
         sql = import_module("Zergio.helpers.SQL.gban_sql")
         sql2 = import_module("Zergio.helpers.SQL.gmute_sql")
+        sql3 = import_module("Zergio.helpers.SQL.gkick_sql")
     except Exception as e:
         sql = None
         sql2 = None
-        LOGS.warn("Unable to run GBan and GMute command, no SQL connection found")
+        sql3 = None
+        LOGS.warn("Unable to run GBan, GMute,GKick command, no SQL connection found")
         raise e
 
 
@@ -284,7 +286,55 @@ async def globals_check(client: Client, message: Message):
 
     message.continue_propagation()
 
+# ON PROGRES G KICK!!!!! JAN LUPA DI LANJUT 
 
+@Client.on_message(filters.command("gmute", cmd) & filters.me)
+async def gkick_user(client: Client, message: Message):
+    args = await extract_user(message)
+    reply = message.reply_to_message
+    Man = await edit_or_reply(message, "`Processing...`")
+    if args:
+        try:
+            user = await client.get_users(args)
+        except Exception:
+            await Man.edit(f"`Please specify a valid user!`")
+            return
+    elif reply:
+        user_id = reply.from_user.id
+        user = await client.get_users(user_id)
+    else:
+        await Man.edit(f"`Please specify a valid user!`")
+        return
+    if user.id == client.me.id:
+        return await Man.edit("**Dirimu sehat bes ? diri Sendiri di gkick 🗿**")
+    if user.id in DEVS:
+        return await Man.edit("**Dirimu ngantuk kah bes ? 🗿**")
+    if user.id in WHITELIST:
+        return await Man.edit(
+            "**Kau Gak Bisa bes gkick Dia Karena Dia Adalah admin @ZERGIIORVDRA 😡**"
+        )
+    try:
+        replied_user = reply.from_user
+        if replied_user.is_self:
+            return await Man.edit("`Calm down anybob, you can't gkick yourself.`")
+    except BaseException:
+        pass
+    try:
+        if sql3.is_gkick(user.id):
+            return await Man.edit("`User already gkick`")
+        sql3.gmute(user.id)
+        await Man.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gkick!")
+        try:
+            common_chats = await client.get_common_chats(user.id)
+            for i in common_chats:
+                await i.restrict_member(user.id, ChatPermissions())
+        except BaseException:
+            pass
+    except Exception as e:
+        await Man.edit(f"**ERROR:** `{e}`")
+        return
+
+    
 add_command_help(
     "globals",
     [
@@ -292,7 +342,13 @@ add_command_help(
             "gban <reply/username/userid>",
             "Melakukan Global Banned Ke Semua Grup Dimana anda Sebagai Admin.",
         ],
+        [
+            "gmute <reply/username/userid>",
+            "Melakukan Global Mute Ke Semua Grup Dimana anda Sebagai Admin.",
+        ],
         ["ungban <reply/username/userid>", "Membatalkan Global Banned."],
+        ["ungban <reply/username/userid>", "Membatalkan Global Mute."],
         ["listgban", "Menampilkan List Global Banned."],
+        ["listgmute", "Menampilkan List Global Mute."],
     ],
 )

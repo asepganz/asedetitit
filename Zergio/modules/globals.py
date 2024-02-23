@@ -288,7 +288,7 @@ async def globals_check(client: Client, message: Message):
 
 # ON PROGRES G KICK!!!!! JAN LUPA DI LANJUT 
 
-@Client.on_message(filters.command("gkick", cmd) & filters.me)
+@Client.on_message(filters.command("gmute", cmd) & filters.me)
 async def gkick_user(client: Client, message: Message):
     args = await extract_user(message)
     reply = message.reply_to_message
@@ -320,7 +320,7 @@ async def gkick_user(client: Client, message: Message):
     except BaseException:
         pass
     try:
-        if sql3.is_gkick(user.id):
+        if sql3.is_gkicked(user.id):
             return await Man.edit("`User already gkick`")
         sql3.gmute(user.id)
         await Man.edit(f"[{user.first_name}](tg://user?id={user.id}) globally gkick!")

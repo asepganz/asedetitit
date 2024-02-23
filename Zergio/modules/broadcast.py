@@ -74,7 +74,7 @@ async def gcast_cmd(client: Client, message: Message):
 @Client.on_message(filters.command("gucast", cmd) & filters.me)
 async def gucast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
-        Man = await edit_or_reply(message, "`SABAR weh otw ngirim nih ke semua grup mu...`")
+        Man = await edit_or_reply(message, "`SABAR weh otw ngirim nih ke semua kontak mu...`")
     else:
         return await message.edit_text("**Pesannya Mana astaga lop u**")
     done = 0

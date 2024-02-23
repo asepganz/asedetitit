@@ -1,6 +1,6 @@
-# zerep userbot Telegram
+# ZEREP userbot Telegram
 
-Zerep Userbot atau zerep yg di ambil dari zer asep wkwkwk. userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
+ZEREP Userbot atau zerep yg di ambil dari zer asep wkwkwk. userbot Telegram modular yang berjalan di Python3 dengan Library Pyrogram.
 
 Saya membuat repository ini untuk bersenang-senang sekaligus membantu anda mengelola grup secara efisien dan untuk membantu mengurangi kebosanan saat menggunakan telegram.
 
@@ -14,7 +14,7 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 ```
 
 <h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku</h3>
-<a href="https://heroku.com/deploy?template=https://github.com/zerepctv/userbot"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
+<a href="https://heroku.com/deploy?template=https://github.com/asedectv/ctvaselole"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
 
 ## 🖇 Generating Pyrogram String Session
@@ -28,13 +28,13 @@ Ketika anda sudah memasang userbot ini, berarti anda sudah siap dengan resikonya
 
 ## 🏷 Support
 
-- Follow Channel .[My Life](https://t.me/yagitudahpokonya) untuk info Update bot 
+- Follow Channel .[CARI TEMAN VIRTUAL](https://t.me/ctvaselole) untuk info Update bot 
 - Gabung Group [CARI TEMAN VIRTUAL](https://t.me/CARI_TEMAN_VIRTUALX) untuk diskusi, pelaporan bug, dan bantuan tentang zerep-userbot.
 
 ## 👨🏻‍💻 Credits
 -  [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
 -  [Risman](https://github.com/mrismanaziz) for [PyroMan-Userbot](https://github.com/mrismanaziz/PyroMan-Userbot)
--  [zerep](https://github.com/zerepctv) for [Zerep-Userbot](https://github.com/zerepctv/userbot)
+-  [asedectv](https://github.com/asedectv) for [ctvaselole](https://github.com/asedectv/ctvaselole)
 
 #### Special Thanks To [Everyone](https://github.com/mrismanaziz/PyroMan-Userbot/graphs/contributors) Who Has Helped Make This Userbot Awesome!
 -  [TeamDerUntergang](https://github.com/TeamDerUntergang/Telegram-SedenUserBot) : SedenUserBot

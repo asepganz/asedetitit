@@ -1299,7 +1299,7 @@ async def santet(client: Client, message: Message):
     await asyncio.sleep(1)
     await typew.edit("**Target Berhasil Tersantet Online 🥴**")
 
-    @Client.on_message(filters.command("ular", cmd) & filters.me)
+@Client.on_message(filters.command("ular", cmd) & filters.me)
 async def ular(client: Client, message: Message):
     await edit_or_reply(
         message,

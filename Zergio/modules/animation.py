@@ -1414,7 +1414,7 @@ async def tengkorak(client: Client, message: Message):
 
 @Client.on_message(filters.command("cinta", cmd) & filters.me)
 async def cinta(client: Client, message: Message):
-    if message.fwd_from:
+    if message.forward_from:
         return
     input_str = message.pattern_match.group(1)
     if input_str == "cinta":
